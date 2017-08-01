@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'helperclasses'   // Has to be same as your library module name
 
+    publishedGroupId = ''
+    libraryName = 'HelperLib'
+    artifact = 'helperclasses'     // Has to be same as your library module name
+
+    libraryDescription = 'Android Library to use helper methods using these helper classes to avoid repetation of code writting in every project'
+    // Your github repo link
+    siteUrl = 'github.com/shaikhhamad'
+    gitUrl = 'github.com/shaikhhamad/Helper.git'
+    githubRepository= 'shaikhhamad/helper'
+
+    libraryVersion = '1.0'
+
+    developerId = 'shaikhhamad'
+    developerName = 'Hamad Shaikh'
+    developerEmail = 'shaikhhamadali@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
